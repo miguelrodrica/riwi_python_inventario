@@ -50,13 +50,13 @@ python --version
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/miguelrodrica/m1_python_moodle_week1.git
+git clone https://github.com/miguelrodrica/riwi_python_inventario.git
 ```
 
 2. Entra a la carpeta del proyecto:
 
 ```bash
-cd m1_python_moodle_week1
+cd riwi_python_inventario
 ```
 
 3. Ejecuta el programa:
