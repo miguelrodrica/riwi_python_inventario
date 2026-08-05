@@ -1,85 +1,82 @@
-# Ejercicio académico: Inventario básico en Python
+# Inventario básico en Python – Actividad Académica (Riwi)
 
-Este repositorio contiene un ejercicio práctico de la **Semana 1 del módulo de Python** (contexto académico en Moodle), enfocado en el uso de:
+Este repositorio contiene una actividad desarrollada como parte del curso **Desarrollo de Software Web & Analítica de Datos** en Riwi, específicamente para el **Módulo 1 - Fundamentos de programación con Python**.
 
-- Entrada de datos por consola (`input`)
-- Validación de tipos con `try` / `except`
-- Operaciones básicas
-- Salida formateada con `f-strings`
+## Descripción general
 
-## ¿Qué es este ejercicio?
+El objetivo de este ejercicio es guiar, paso a paso, la evolución de un sistema de inventario implementado en Python. Se estructura en tres sprints que abordan crecientes niveles de dificultad: desde los conceptos fundamentales hasta la manipulación de archivos, el manejo de colecciones y la modularización del código.
 
-Es un programa de consola llamado `inventario.py` que simula el ingreso de un producto a un sistema de inventario simple.
+---
 
-El script solicita al usuario:
+## Estructura del repositorio y entregables
 
-1. Nombre del producto
-2. Precio del producto
-3. Cantidad del producto
-
-Luego calcula el **costo total** (`precio * cantidad`) y muestra un resumen con los datos ingresados.
-
-## ¿En qué consiste?
-
-El objetivo académico principal es practicar fundamentos de Python:
-
-- **Variables** para almacenar información del producto.
-- **Conversión de tipos** (`float` para precio, `int` para cantidad).
-- **Manejo de errores** con `try`/`except ValueError` para evitar que el programa falle si el usuario escribe un dato inválido.
-- **Bucles `while True`** para repetir la solicitud hasta que la entrada sea correcta.
-
-## Estructura del repositorio
-
-- `inventario.py`: código principal del ejercicio.
-- `inventario.jpg`: imagen relacionada con el ejercicio.
-
-## Requisitos
-
-- Python 3.x instalado.
-
-Puedes verificar tu versión con:
-
-```bash
-python --version
+```
+sprint_1/
+│   inventario_sprint1.py
+│   userstory_sprint1.md
+│   diagrama_flujo.jpg
+sprint_2/
+│   inventario_sprint2.py
+│   userstory_sprint2.md
+sprint_3/
+│   app.py
+│   servicios.py
+│   archivos.py
+│   inventario.csv
+│   userstory_sprint3.md
+README.md
 ```
 
-> En algunos sistemas puede ser necesario usar `python3` en lugar de `python`.
+### Sprints y funcionalidades
 
-## ¿Cómo usarlo?
+#### 🟢 Sprint 1 – Fundamentos y Operaciones Básicas
+- Manejo de variables, entrada de datos por consola, validación de tipos (try/except), operaciones aritméticas simples y salidas formateadas.
+- Primer script: solicita al usuario nombre, precio y cantidad de un producto, calcula el costo total y muestra un resumen.
 
-1. Clona el repositorio:
+#### 🟡 Sprint 2 – Múltiples Registros y Menú Interactivo
+- Gestión de varios productos mediante una estructura de lista de diccionarios.
+- Presenta un menú en consola (agregar, mostrar inventario, estadísticas, salir), uso de condicionales y bucles.
+- Introducción de funciones y código modularizado para hacer la lógica más mantenible.
 
-```bash
-git clone https://github.com/miguelrodrica/riwi_python_inventario.git
-```
+#### 🟠 Sprint 3 – Colecciones, Modularidad y Persistencia
+- Persistencia con archivos CSV (guardar y cargar inventario), manejo de fusión/reemplazo, validación rigurosa.
+- Módulos separados: servicios para lógica de inventario y archivos para manipulación de CSV.
+- CRUD completo, estadísticas avanzadas (producto más caro, mayor stock, etc.), y manejo detallado de errores/validaciones.
 
-2. Entra a la carpeta del proyecto:
+---
 
-```bash
-cd riwi_python_inventario
-```
+## ¿Cómo ejecutar el proyecto?
 
-3. Ejecuta el programa:
+Requisitos:
+- Python 3.x instalado en tu sistema.
 
-```bash
-python inventario.py
-```
+Pasos básicos:
 
-(o `python3 inventario.py`)
+1. Clona este repositorio:
+    ```bash
+    git clone https://github.com/miguelrodrica/riwi_python_inventario.git
+    cd riwi_python_inventario
+    ```
+2. Navega a la carpeta del sprint que deseas probar.
+3. Ejecuta el script principal de ese sprint. Ejemplo para Sprint 3:
+    ```bash
+    cd sprint_3
+    python app.py
+    # (o python3 app.py dependiendo tu sistema)
+    ```
 
-4. Ingresa los datos solicitados por consola.
+---
 
-## Ejemplo de ejecución
+## Notas académicas y recomendaciones
 
-```text
-Bienvenido al software de Inventario
-Escriba los siguientes datos del producto a ingresar
-Nombre: Cuaderno
-Precio: 2.5
-Cantidad: 4
-Usted ingresó: Producto: Cuaderno | Precio: 2.5 | Cantidad: 4 | Total: 10.0
-```
+- Este proyecto tiene fines educativos, como ejercicio práctico y progresivo para afianzar los fundamentos de programación con Python.
+- Cada sprint incluye un archivo user story (recomendado leerlo antes de abrir los scripts).
+- Hay diagramas de flujo en los sprints que lo requieren.
+- Recomendamos ejecutar primero Sprint 1, luego Sprint 2 y finalmente Sprint 3 para apreciar la evolución escalonada del sistema.
+- El código está comentado y modularizado para facilitar la comprensión.
 
-## Nota académica
+---
 
-Este ejercicio está diseñado con fines de aprendizaje inicial. Es una base útil para evolucionar hacia versiones más completas (múltiples productos, almacenamiento en archivos o base de datos, menú interactivo, etc.).
+### Autoría y licencia
+
+Desarrollado para uso académico en el marco de Riwi. Libre de uso, copia y adaptación con fines educativos.
